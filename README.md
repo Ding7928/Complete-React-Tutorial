@@ -1,4 +1,4 @@
-# \*\*Reproducibility of Ensemble Methods for Record Linkage
+# Reproducibility of Ensemble Methods for Record Linkage
 
 ## Overview
 
@@ -12,7 +12,7 @@ No pretrained models are required as all models are trained from scratch.
 
 ## Dependencise
 
-**Note:make sure you're in '/CSE6250_FINAL_PROJECT'directory firs**
+**Note:make sure you're in '/CSE6250_FINAL_PROJECT'directory**
 
 ```sh
 python -m venv venv
@@ -37,33 +37,3 @@ pip install -r requirements.txt
 
 **Reproduce results for FERBL dataset by running'FERBL.ipynb'**
 **Reproduce results for ePBRN dataset by running'ePBRN.ipynb'**
-
-Copy code
-git https://github.com/mchen920329/CSE6250_Final_Project
-
-Place the Datasets
-
-Add your .csv datasets to the data/ directory.
-Set Up the Working Directory
-In your script, specify the working directory as follows:
-
-python
-Copy code
-import os
-os.chdir('/path/to/your/project')
-Run Preprocessing
-Prepare the datasets for training and testing:
-
-Copy code
-python preprocess_data.py
-Train and Evaluate Models
-Train basic learners and ensemble methods, and evaluate their performance:
-
-Copy code
-python train_and_evaluate.py
-Visualizations
-Results (e.g., bar charts and confusion matrices) will be saved in the results/ directory.
-
-Example Output
-Bar Charts: Comparing the performance of basic learners and ensemble methods.
-Confusion Matrices: Highlighting true positives, true negatives, false positives, and false negatives for all models.
